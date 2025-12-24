@@ -3,7 +3,7 @@
  * Uses @vue/compiler-sfc to parse .vue files and extract template/script sections
  */
 
-import { parse as vueParse } from 'vue/compiler-sfc';
+import { parse as vueParse } from '@vue/compiler-sfc';
 import { readFileSync } from 'fs';
 import type { ParsedVueSFC } from './types.js';
 
@@ -17,7 +17,7 @@ export function parseVueSFC(filePath: string): ParsedVueSFC {
   });
 
   if (errors.length > 0) {
-    console.warn(`Warning: Errors parsing ${filePath}:`, errors.map(e => e.message).join(', '));
+    console.warn(`Warning: Errors parsing ${filePath}:`, errors.map((e: { message: string }) => e.message).join(', '));
   }
 
   // Calculate line offsets for each section
