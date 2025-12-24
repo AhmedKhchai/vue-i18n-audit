@@ -1,0 +1,77 @@
+{
+    "name": "vue-i18n-audit",
+    "version": "1.0.0",
+    "description": "CLI tool to audit Vue.js applications for i18n translation completeness. Detects missing translations and hardcoded text.",
+    "type": "module",
+    "bin": {
+        "vue-i18n-audit": "./bin/cli.js"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist/",
+        "bin/",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build",
+        "dev": "tsx index.ts"
+    },
+    "keywords": [
+        "vue",
+        "vuejs",
+        "i18n",
+        "vue-i18n",
+        "internationalization",
+        "translation",
+        "audit",
+        "cli",
+        "lint",
+        "missing-translations",
+        "hardcoded-text"
+    ],
+    "author": "Ahmed <a.khchai@gmail.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AhmedKhchai/vue-i18n-audit.git"
+    },
+    "bugs": {
+        "url": "https://github.com/yourusername/vue-i18n-audit/issues"
+    },
+    "homepage": "https://github.com/yourusername/vue-i18n-audit#readme",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {
+        "commander": "^12.0.0",
+        "glob": "^10.3.0"
+    },
+    "peerDependencies": {
+        "@babel/parser": ">=7.23.0",
+        "@vue/compiler-sfc": ">=3.3.0"
+    },
+    "peerDependenciesMeta": {
+        "@babel/parser": {
+            "optional": false
+        },
+        "@vue/compiler-sfc": {
+            "optional": false
+        }
+    },
+    "devDependencies": {
+        "@babel/parser": "^7.23.0",
+        "@types/node": "^20.0.0",
+        "@vue/compiler-sfc": "^3.4.0",
+        "tsx": "^4.0.0",
+        "typescript": "^5.0.0"
+    }
+}

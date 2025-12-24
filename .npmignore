@@ -1,0 +1,22 @@
+# Source files (we ship compiled dist/)
+*.ts
+!*.d.ts
+src/
+config.ts
+index.ts
+tsconfig.json
+
+# Dev files
+.gitignore
+.eslintrc*
+.prettierrc*
+*.test.*
+__tests__/
+coverage/
+
+# Editor/OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
