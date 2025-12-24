@@ -45,9 +45,9 @@
         "url": "git+https://github.com/AhmedKhchai/vue-i18n-audit.git"
     },
     "bugs": {
-        "url": "https://github.com/yourusername/vue-i18n-audit/issues"
+        "url": "https://github.com/AhmedKhchai/vue-i18n-audit/issues"
     },
-    "homepage": "https://github.com/yourusername/vue-i18n-audit#readme",
+    "homepage": "https://github.com/AhmedKhchai/vue-i18n-audit#readme",
     "engines": {
         "node": ">=18.0.0"
     },
